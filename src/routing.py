@@ -47,7 +47,7 @@ def shortest_path_graph(graph, fields, **kwargs):
 
     return_paths = kwargs.get('return_paths', False)
 
-    _, values, all_paths = shortest_paths(graph, fields, **kwargs)
+    _, values, all_paths = shortest_paths(graph, fields = fields, **kwargs)
     
     all_pairs = nx.DiGraph()
 
